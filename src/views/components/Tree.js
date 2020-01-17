@@ -7,7 +7,8 @@ const Tree = ({ treeStructure }) => {
     return (
       <ul>
         {
-          structure.children ? structure.children.map(child => {
+          structure.children 
+          ? structure.children.map(child => {
             return (
               <>
                 <li>{child.name}</li>
@@ -15,7 +16,8 @@ const Tree = ({ treeStructure }) => {
               </>
             );
           })
-      : null}
+          : null
+      }
       </ul>
     )
   }

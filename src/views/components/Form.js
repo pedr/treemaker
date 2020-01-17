@@ -13,7 +13,7 @@ const Form = ({inputPath, reRender}) => {
             <textarea
               className="form-control p-2"
               value={input}
-              onChange={(e) => setInput(e.currentTarget.value)}
+              onChange={e => setInput(e.currentTarget.value)}
               cols="60"
               rows="6"
             />
